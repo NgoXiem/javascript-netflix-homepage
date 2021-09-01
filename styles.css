@@ -1,0 +1,128 @@
+/* global styles */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #111;
+}
+
+/* navbar  */
+nav {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  z-index: 1;
+  width: 100%;
+  height: 30px;
+}
+
+.logo,
+.avatar {
+  object-fit: contain;
+}
+.logo {
+  width: 80px;
+  height: 30px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  padding-right: 40px;
+}
+
+.fixed-nav {
+  background-color: #111;
+  transition: all 0.3s ease-in;
+}
+
+/* end of navbar */
+
+/* main banner */
+.banner {
+  max-height: 500px;
+  background-size: cover;
+  padding-top: 20vh;
+}
+.banner {
+  color: #fff;
+}
+.banner__info {
+  padding: 0 50px 50px 50px;
+}
+.banner__name {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.banner__description {
+  font-size: 15px;
+  margin: 0;
+  padding-top: 20px;
+  max-width: 500px;
+}
+.banner__button {
+  background-color: rgba(51, 51, 51, 0.5);
+  border: none;
+  padding: 6px 24px;
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.05em;
+  cursor: pointer;
+}
+.banner__button:hover {
+  background-color: #fff;
+  color: #111;
+  transition: all 0.3s ease-in;
+}
+
+.banner__fadeOut {
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(229, 229, 229, 0), #111);
+}
+
+/* End of banner */
+
+/* rows and images */
+.row {
+  margin: 20px;
+}
+.row__title {
+  color: #fff;
+}
+
+.row__images img {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+.row__images {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+  max-height: 100px;
+}
+.row__images--larger {
+  max-height: 250px;
+}
+.row__images::-webkit-scrollbar {
+  display: none;
+}
+img:hover {
+  transform: scale(1.08);
+  transition: all 0.3s ease-in;
+}
+.poster {
+  max-height: 100px;
+}
+.poster-large {
+  max-height: 250px;
+}
